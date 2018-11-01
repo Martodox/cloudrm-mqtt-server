@@ -1,0 +1,38 @@
+{
+  "name": "emitterio-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node --inspect=5858 src/server.ts",
+    "dev": "./node_modules/nodemon/bin/nodemon.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mosca": "^2.8.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/mosca": "^2.8.1",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4",
+    "ts-jest": "^23.1.4",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  }
+}
